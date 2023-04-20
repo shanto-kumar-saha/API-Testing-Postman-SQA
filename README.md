@@ -1,2 +1,2 @@
 # Postman-API
-This repository has checking User's API's by the using tools of Postman.
+This repository I have checked User's API's by using Postman tools.
