@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "c5543710-e86f-4497-8b56-2d76837e0ab3",
+		"name": "API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26171839",
+		"_collection_link": "https://cloudy-flare-669597.postman.co/workspace/Test-Workspace-1~07d4ea14-00ed-440c-84ec-b034d0b64239/collection/26171839-c5543710-e86f-4497-8b56-2d76837e0ab3?action=share&creator=26171839&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test.user@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/login",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmUxMmFmNjE3ZDUxODA3ZGFhNGY3Y2ZlZGMxMzhjMGVjMDgxYTkyNjg4Y2Y4ZWYzMDRiMTliMTIzYTc0M2MzNWZhN2IxOGY5YTM4ODQ2NDYiLCJpYXQiOjE2ODY5ODM2MTcuNTcwODk0LCJuYmYiOjE2ODY5ODM2MTcuNTcwODk5LCJleHAiOjE3MTg2MDYwMTcuNTY3ODMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.w2DSil4b3WfWu2FQWw0SehU3e7e_01rRBVJw5iiwyOFo-IbUP2JPLcS5-0c7g5Rgs3Ip4aWV4MFntBMGcpYbrna5w7qWWiXCmt3JGwm5f-tHYS1VDWy5mgJ-BGy6PtKgw8-5vXFn17F262E_ek1kKAHXUCNhwef2J-kwP_MpB9b5cKvRbgh0FtAlHCXOecCaRq49pVOevYft8By8s1n-leDcQuMRyTX_6L7m3051ZIXbYBRZQH_48tD97OJkFTSwmwrKGIK9SuPLkktXRpAuCj7c3M63cObNulPwOZGQgniAeTkOTmFfTUL34Nhg9TrT1DMEAsbEnslVw48r7r-mVjc82cKQRbgoLKsigoiTBywIbv6YYaB6Vjswp51zmwK9T1IRaXw5TS6A3Iz4FXlgKlmSAUCLhF134YIopFUvbFjMVKq0l4k2PRSn8OtwN80GhSSjXwrYknm8bNL8LTtkBP-vuu_tvSjsMlpq_bSMJPeb2I3ZotZ8q9Hz2dxAljnaqwSMlr69vH0m0MNbSXIZN0Da3r1PNcn7i2KSjXjYc91INgr8xMgn-GjOxdlh3Poo9ByMZ2Ck10EXWBJ5zQeD7BxzuLz5K_z30h0eNybv3qg_tJw9rq2kj20zRFLodol4_Dngs9FtejYfr919vTDscnBsNm-PMaVptcqvFACHD88\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NULL",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/product/view_product",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"product",
+						"view_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Single Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmUxMmFmNjE3ZDUxODA3ZGFhNGY3Y2ZlZGMxMzhjMGVjMDgxYTkyNjg4Y2Y4ZWYzMDRiMTliMTIzYTc0M2MzNWZhN2IxOGY5YTM4ODQ2NDYiLCJpYXQiOjE2ODY5ODM2MTcuNTcwODk0LCJuYmYiOjE2ODY5ODM2MTcuNTcwODk5LCJleHAiOjE3MTg2MDYwMTcuNTY3ODMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.w2DSil4b3WfWu2FQWw0SehU3e7e_01rRBVJw5iiwyOFo-IbUP2JPLcS5-0c7g5Rgs3Ip4aWV4MFntBMGcpYbrna5w7qWWiXCmt3JGwm5f-tHYS1VDWy5mgJ-BGy6PtKgw8-5vXFn17F262E_ek1kKAHXUCNhwef2J-kwP_MpB9b5cKvRbgh0FtAlHCXOecCaRq49pVOevYft8By8s1n-leDcQuMRyTX_6L7m3051ZIXbYBRZQH_48tD97OJkFTSwmwrKGIK9SuPLkktXRpAuCj7c3M63cObNulPwOZGQgniAeTkOTmFfTUL34Nhg9TrT1DMEAsbEnslVw48r7r-mVjc82cKQRbgoLKsigoiTBywIbv6YYaB6Vjswp51zmwK9T1IRaXw5TS6A3Iz4FXlgKlmSAUCLhF134YIopFUvbFjMVKq0l4k2PRSn8OtwN80GhSSjXwrYknm8bNL8LTtkBP-vuu_tvSjsMlpq_bSMJPeb2I3ZotZ8q9Hz2dxAljnaqwSMlr69vH0m0MNbSXIZN0Da3r1PNcn7i2KSjXjYc91INgr8xMgn-GjOxdlh3Poo9ByMZ2Ck10EXWBJ5zQeD7BxzuLz5K_z30h0eNybv3qg_tJw9rq2kj20zRFLodol4_Dngs9FtejYfr919vTDscnBsNm-PMaVptcqvFACHD88\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NULL",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/product/view_single_product/15",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"product",
+						"view_single_product",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmUxMmFmNjE3ZDUxODA3ZGFhNGY3Y2ZlZGMxMzhjMGVjMDgxYTkyNjg4Y2Y4ZWYzMDRiMTliMTIzYTc0M2MzNWZhN2IxOGY5YTM4ODQ2NDYiLCJpYXQiOjE2ODY5ODM2MTcuNTcwODk0LCJuYmYiOjE2ODY5ODM2MTcuNTcwODk5LCJleHAiOjE3MTg2MDYwMTcuNTY3ODMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.w2DSil4b3WfWu2FQWw0SehU3e7e_01rRBVJw5iiwyOFo-IbUP2JPLcS5-0c7g5Rgs3Ip4aWV4MFntBMGcpYbrna5w7qWWiXCmt3JGwm5f-tHYS1VDWy5mgJ-BGy6PtKgw8-5vXFn17F262E_ek1kKAHXUCNhwef2J-kwP_MpB9b5cKvRbgh0FtAlHCXOecCaRq49pVOevYft8By8s1n-leDcQuMRyTX_6L7m3051ZIXbYBRZQH_48tD97OJkFTSwmwrKGIK9SuPLkktXRpAuCj7c3M63cObNulPwOZGQgniAeTkOTmFfTUL34Nhg9TrT1DMEAsbEnslVw48r7r-mVjc82cKQRbgoLKsigoiTBywIbv6YYaB6Vjswp51zmwK9T1IRaXw5TS6A3Iz4FXlgKlmSAUCLhF134YIopFUvbFjMVKq0l4k2PRSn8OtwN80GhSSjXwrYknm8bNL8LTtkBP-vuu_tvSjsMlpq_bSMJPeb2I3ZotZ8q9Hz2dxAljnaqwSMlr69vH0m0MNbSXIZN0Da3r1PNcn7i2KSjXjYc91INgr8xMgn-GjOxdlh3Poo9ByMZ2Ck10EXWBJ5zQeD7BxzuLz5K_z30h0eNybv3qg_tJw9rq2kj20zRFLodol4_Dngs9FtejYfr919vTDscnBsNm-PMaVptcqvFACHD88\"",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/cart/add_cart",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"cart",
+						"add_cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "NULL",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/cart/view_cart",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"cart",
+						"view_cart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
